@@ -3,11 +3,11 @@
 #### Team members-  Achal khanna(2021MEB1263),   Ujjawal kumar(2021MEB1331),  Ujjwal Rai(2021MEB1332)
 
 
-### Objective:
+## Objective:
 To build an assembler that converts 32 bit RISC-V assembly code to machine code using C++. 
 
 
-### Supported Instructions:
+## Supported Instructions:
 
 | **# R format** | add  | and | or | sll | slt | sra | srl | sub | xor | mul | div | rem |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -29,15 +29,15 @@ To build an assembler that converts 32 bit RISC-V assembly code to machine code 
 
 Assembler directives .text, .data, .byte, .half, .word, .dword and .asciiz are supported. 
 
-### Notes:  
+## Notes:  
 #### Pseudo instruction and floating point operations are not supported.
 #### End of program is specified by 0xFFFFFFFF.
 #### Data segment is also printed in .mc file after machine code is generated.
 
-### Directory structure:
+## Directory structure:
 #### The assembler.cpp takes input.asm as input file and generate the output.mc. Each line in input.asm is one instruction. The output.mc is generated after the execution. 
 
-### How to execute:
+## How to execute:
 #### Clone the repository: git clone https://github.com/achal-khanna/RISCV-Assembler
 #### Write your assembly code in input.asm
 #### Execute the assembler.asm and output.mc will be generated
