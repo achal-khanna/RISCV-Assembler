@@ -27,9 +27,7 @@ To build an assembler that converts 32 bit RISC-V assembly code to machine code 
 | **UJ format** | jal  | 
 | :---: | :---: |
 
-| **Assembler directives** | .byte  | .data | .text | .half | .word  | .dword | .asciz | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-
+Assembler directives .text, .data, .byte, .half, .word, .dword and .asciz are supported. 
 
 ### Note:  
 #### Pseudo instruction and floating point operations are not supported.
