@@ -9,22 +9,22 @@ To build an assembler that converts 32 bit RISC-V assembly code to machine code 
 
 ### Supported Instructions:
 
-| **R format** | add  | and | or | sll | slt | sra | srl | sub | xor | mul | div | rem |
+| **# R format** | add  | and | or | sll | slt | sra | srl | sub | xor | mul | div | rem |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
-| **I format** | addi  | andi | ori | lb | ld | lh | lw | jalr |
+| **# I format** | addi  | andi | ori | lb | ld | lh | lw | jalr |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
-| **S format** | sb  | sw | sd | sh | 
+| **# S format** | sb  | sw | sd | sh | 
 | :---: | :---: | :---: | :---: | :---: | 
 
-| **SB format** | beq  | bne | bge | blt | 
+| **# SB format** | beq  | bne | bge | blt | 
 | :---: | :---: | :---: | :---: | :---: | 
 
-| **U format** | auipc  | lui | 
+| **# U format** | auipc  | lui | 
 | :---: | :---: | :---: | 
 
-| **UJ format** | jal  | 
+| **# UJ format** | jal  | 
 | :---: | :---: |
 
 Assembler directives .text, .data, .byte, .half, .word, .dword and .asciz are supported. 
