@@ -24,7 +24,7 @@ To build an assembler that converts 32 bit RISC-V assembly code to machine code 
 | **U format** | auipc  | lui | 
 | :---: | :---: | :---: | 
 
-| **UJ format** | JAL  | 
+| **UJ format** | jal  | 
 | :---: | :---: |
 
 | **Assembler directives** | .byte  | .data | .text | .half | .word  | .dword | .asciz | 
