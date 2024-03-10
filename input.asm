@@ -2,7 +2,7 @@
 
 # Data Section
 .data
-my_data: .word 42          # Define a 32-bit word with value 42
+my_data: .half 42, 25, 36          # Define a 32-bit word with value 42
 
 # Text Section
 .text
@@ -11,10 +11,10 @@ my_data: .word 42          # Define a 32-bit word with value 42
     add x1, x2, x3         # Add
     and x4, x5, x6         # Bitwise AND
     or x7, x8, x9          # Bitwise OR
-    sll x10, x11, 2        # Shift Left Logical
+    sll x10, x11, x0        # Shift Left Logical
     slt x12, x13, x14      # Set Less Than
-    sra x15, x16, 2        # Shift Right Arithmetic
-    srl x17, x18, 2        # Shift Right Logical
+    sra x15, x16, x0       # Shift Right Arithmetic
+    srl x17, x18, x0        # Shift Right Logical
     sub x19, x20, x21      # Subtract
     xor x22, x23, x24      # Bitwise XOR
     mul x25, x26, x27      # Multiply
@@ -42,18 +42,17 @@ my_data: .word 42          # Define a 32-bit word with value 42
     beq x26, x27, label1   # Branch if Equal
     bne x28, x29, label2   # Branch if Not Equal
     bge x30, x31, label3   # Branch if Greater Than or Equal
-    blt x1, x2, label4    # Branch if Less Than
+    blt x11, x2, label4    # Branch if Less Than
 
     # U-Type Instructions
     auipc x3, 100          # Add Upper Immediate to PC
     lui x4, 200            # Load Upper Immediate
 
     # UJ-Type Instructions
-    jal label5             # Jump and Link (Jump Absolute)
 
 .data
-hello: .asciiz "dnjn"
-
+hello: .asciiz "dnjncmsk"
+hell: .byte 32
 .text
 addi x0, x0, 0
 jal x1, heloo
@@ -72,16 +71,13 @@ label1:
 label2:
     addi x1, x1, 1                     # No operation (placeholder)
 label3:
-    addi x1, x1, 1                     # No operation (placeholder)
+    addi x1, x1, 1
 label4:
     addi x1, x1, 1                     # No operation (placeholder)
-
-label5:
+label5: 
     addi x1, x1, 1                     # No operation (placeholder)
     
 
 # End of Program
-
-
 
 
