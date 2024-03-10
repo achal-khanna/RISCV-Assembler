@@ -32,12 +32,15 @@ Assembler directives .text, .data, .byte, .half, .word, .dword and .asciz are su
 ### Note:  
 #### Pseudo instruction and floating point operations are not supported.
 
+### Directory structure:
+####
+####
+####
 
 ### How to execute:
 #### Clone the repository: git clone https://github.com/achal-khanna/RISCV-Assembler
 #### 
 #### 
-####
 ####
 
 
