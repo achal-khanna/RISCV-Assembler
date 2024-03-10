@@ -768,7 +768,6 @@ void final_parse(string input_filename, string output_filename, map<string, int>
                         Data_segment["0x" + binTohex(decTobin(to_string(Data)))] = "0x" + intermediate.substr(6, 2);
                         Data += adder;
                     }
-                    Data_segment["0x" + binTohex(decTobin(to_string(Data)))] = "0x00";
                     Data += adder; 
                     continue;
                 }
@@ -812,5 +811,3 @@ void final_parse(string input_filename, string output_filename, map<string, int>
     output_file.close();
     return;
 }
- 
-
