@@ -93,7 +93,7 @@ double twoBit(long long currAddress, long long nextAddress, long long targetAddr
 
 string longLongToHexString(long long value) {
     ostringstream oss;
-    oss << std::hex << value; 
+    oss << std::hex << setw(8) << setfill('0') << value; 
     return "0x" + oss.str(); 
 }
 
